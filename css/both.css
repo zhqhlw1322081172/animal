@@ -1,0 +1,381 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+  
+}
+h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #d6ccc3;
+   position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+a:hover{
+    color:#8b7143; 
+}
+
+/* header部分 */
+@media (max-width: 770px){
+   .left .phone{
+        display:none;
+    } 
+    .left .weixin{
+        display:none;
+    } 
+}
+@media (max-width: 992px){
+    .top .left a{
+        padding:0 15px;
+    }
+}
+@media (max-width: 480px){
+    .top .left a{
+        padding:0 10px;
+    }
+}
+.top{
+  max-width: 1510px;
+  width: 96%;
+  background: #ffffff;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+}
+.left{
+    width: 50%;
+    position: absolute;
+    left:0;
+}
+.left a{
+    /* display: inline-block; */
+    float:left;
+    height: 50px;
+    line-height: 50px;
+    padding:0 28px;
+    color: #242121;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    
+    border-right: 1px solid #f6f4f4;
+}
+.left .weixin{
+    position: relative;
+    font-weight: 700;
+}
+.left .weixin img{
+    position: absolute;
+    left: 50%;
+	margin-left: -42px;
+    z-index: 8;
+	width: 83px;
+	height: 83px;
+	display: none;
+}
+.left .weixin:hover img{
+    display: block;
+}
+.left .phone{
+    border-right: none;
+    font-size: 18px;
+    padding: 0 0;
+    padding-left: 28px;
+    font-weight: 100;
+}
+.left a:hover{
+    box-sizing: border-box;
+    border-bottom: 4px solid #a99269;
+}
+.left .phone:hover{
+    border:none;
+}
+@media (max-width: 680px){
+    .right{
+        display: none;
+    }
+}
+.right{
+    position: absolute;
+    right: 70px;
+    height: 30px;
+    width: 200px;
+    color: #b1afaf;
+    text-align: right;
+    margin: 10px 0;
+}
+ .word{
+    position: relative;
+    height: 28px;
+    width: 155px;
+    text-indent: 5px;
+    display: none;
+    right:-15px;
+}
+.imgs{
+    position: relative;
+    top:6px;
+    left: -2px;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+    top:15px;
+}
+.fullbox{
+    width: 306px;
+}
+.menufull{
+    position: absolute;
+    right: 0;
+    top:-16px;
+    padding-top: 70px;
+    background: #262323;
+    width: 306px;
+    padding-bottom: 10%;
+    display: none;
+    z-index: 6;
+    /* pointer-events: none; */
+    /* height: auto; */
+  
+}
+@media (max-width:480){
+    .header .top .fullbox .menufull{
+        width: 250px;
+    }
+}
+.menufull a{
+    display: block;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    line-height: 48px;
+}
+
+.close::before{
+    display: inline-block;
+    content: '×';
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 24px;
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    top:-50px;
+    left:240px;
+    color: white;
+    /* pointer-events: auto; */
+}
+.nav:hover{
+    color: #a99269;
+}
+.menufull .ul_2{
+    display: none;
+}
+.menufull .ul_2 li{
+    position: relative;
+    width: 100px;
+    left:-76px;
+    text-align: right;
+}
+.menufull .active{
+    color: #a99269;
+    position: relative;
+    left:28px;
+}
+.ul_2 a{
+    font-size: 12px;
+    line-height: 30px;
+}
+.menufull li{
+    position: relative;
+    left: 200px;
+}
+
+
+
+
+/* foot部分 */
+.foot{
+    background:#323232 url(../img/foot.jpg) no-repeat;
+    padding-top:100px;
+    /* background-size: 100%; */
+    padding-bottom: 100px;
+    clear: both;
+}
+.footbox{
+    background: #ffffff;
+    margin: auto;
+    max-width: 1385px;
+    width: 94%;
+    overflow: hidden;
+}
+.footcon{
+    overflow: hidden;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.footcon .footul{
+    max-width: 885px;
+    width: 70%;
+    float: left;
+   
+}
+.footul li{
+    float: left;
+    width: 20%;
+    border-left: 1px solid #e4e4e4;
+    padding-left: 15px;
+    /* padding-top: 10px; */
+    min-height: 170px;
+}
+.footul li a:first-child{
+    font-size: 15px;
+    line-height: 40px;
+    color: #3f3f3f;
+    
+}
+.footul li a{
+    display: block;
+    font-size: 12px;
+    color: #545454;
+    line-height: 26px;
+}
+
+.conct{
+    width:30%;
+    max-width: 395px;
+    float: left; 
+    border-left: 1px solid #adadad;
+    padding-left: 30px;
+    padding-top:30px;
+    color: #484848;
+    font-family: "微软雅黑";
+}
+.conct h3{
+    color: #8b7143;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 500;
+}
+.conct h5{
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: 500;
+}
+.conct span{
+    background: #484848;
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    vertical-align: text-top;
+}
+.conct h6{
+    line-height: 25px;
+    font-size: 12px;
+}
+.conct h6 a{
+   color:  #484848; 
+}
+.conct h6 a:hover{
+    color:#8b7143; 
+}
+.copy{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom:30px;
+}
+.copyinpt{
+    display: inline-block;
+    width: 87px;
+    border: 1px solid #919191;
+    text-align: center;
+    line-height: 17px;
+    /* cursor: pointer; */
+    margin: 0px 10px;
+    position: relative;
+}
+.copyfull{
+    position: absolute;
+    bottom: 19px;
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    display: none;
+}
+.copyfull a{
+    color: #434343;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+}
+.copyimg{
+    vertical-align: middle;
+}
+.map{
+    color: #666;
+    margin-left: 8px;
+}
+.footul li a:hover{
+    color:#8b7143; 
+}
+@media (max-width: 768px){
+     .footul{   
+     float: none;
+     width: 100%;
+     }
+ }
+@media (max-width: 768px){
+    .footcon{   
+    float: none;
+    width: 680px;
+    }
+}
+@media (max-width: 480px){
+    .footcon{   
+    float: none;
+    width: 400px;
+    }
+}
+ @media (max-width: 480px){
+    .footul{   
+    float: none;
+    width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .conct{   
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+    }
+}
+
+/* @media (max-width: 768px){
+    .footcon .footul li {
+        width: 50%;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+} */
+
+@media (max-width: 480px){
+    .footcon .footul li{
+        width: 50%;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+}
